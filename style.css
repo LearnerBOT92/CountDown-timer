@@ -1,0 +1,169 @@
+
+/* Body */
+body {
+  background-color: black;
+  background-blend-mode: multiply,multiply;
+  background-blend-mode: multiply;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-position: center center;
+  min-height: max-content;
+}
+
+.body_flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Titles */
+
+
+.title_text {
+  max-width: fit-content;
+  max-height: fit-content;
+  /* background-color: aqua; */
+}
+
+
+h1 {
+  font-weight: normal;
+  color: #483018;
+  font-size: 4rem;
+  margin-top: 7rem;
+  margin-bottom: 0rem;
+  margin-left: 2rem;
+  /* -webkit-text-stroke: 1px rgba(0, 0, 0, 0.719); */
+}
+
+h2 {
+  font-weight: normal;
+  color: #f0a848;
+  font-size: 2rem;
+  margin-top: 0.3rem;
+  margin-left: 2rem;
+  /* -webkit-text-stroke: 1px rgba(0, 0, 0, 0.719); */
+
+}
+
+
+h3 {
+  color: #d84800;
+  font-family: "Poppins";
+  font-weight: normal;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+
+
+span {
+  color: #d84800	;
+}
+
+/* Count-down timer */
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
+  min-width: 100%;
+}
+
+.big-text {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0 2rem;
+  color: #d84800	;
+}
+
+.countdown-el {
+  text-align: center;
+  width: 200px;
+}
+
+.countdown-el span {
+  color: #f0a848;
+  font-size: 2rem;
+  -webkit-text-stroke: 0.1px black;
+  
+}
+
+p {
+  color: #d84800;
+}
+
+/* List of events */
+
+
+.list_event_container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9rem;
+  margin-bottom: 1rem;
+  min-width: 50%;
+  margin-left: 3rem;
+  /* background-color: aqua; */
+} 
+
+.event_obj_1 {
+  font-size: 40px;
+  /* text-align: center; */
+  /* background-color: black; */
+  max-width: max-content;
+  
+}
+.event_obj_2 {
+
+  font-size: 40px;
+  /* text-align: center; */
+  /* background-color: black; */
+  max-width: max-content;
+}
+
+.event_obj_3 {
+  font-size: 40px;
+  /* text-align: center; */
+  /* background-color: black; */
+}
+
+
+
+a {
+  color: #d84800;
+  text-decoration: none;
+}
+
+
+
+
+
+/* Google API */
+#map {
+  margin-top: 1rem;
+  height: 375px;
+  width: 100%;
+}
+
+
+/* 3D Object */
+
+.image_frame{
+  height: 50rem;
+  width:  50rem;
+}
+
+.image_container {
+  opacity: 50%;
+  max-width: max-content;
+  max-height: max-content;
+  position: absolute;
+  z-index: -10;
+}
