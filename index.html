@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Countdown</title>
 		<link rel="stylesheet" href="style.css" />
 		<script
-		defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPHQEion9IekJHgfU-omNFNr7zBajW6_o"
-	>
-</script>
-<script src="countdown.js" defer></script>
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPHQEion9IekJHgfU-omNFNr7zBajW6_o"
+		></script>
+		<script src="countdown.js" defer></script>
 	</head>
 	<body>
-<div class="body_flex">
-		<div class="title_text">
-			
-			<h1 class="title">IT'S <span>ALMOST</span> TIME FOR</h1>
-			
-			<div class="countdown-container">
-				<div class="countdown-el days-c">
-					<p class="big-text" id="days">0</p>
-					<span>DAYS</span>
-				</div>
-
-				<div class="countdown-el hours-c">
-					<p class="big-text" id="hours">0</p>
-					<span>HOURS</span>
-				</div>
-
-				<div class="countdown-el mins-c">
-					<p class="big-text" id="mins">0</p>
-					<span>MINUTES</span>
-				</div>
-
-				<div class="countdown-el seconds-c">
-					<p class="big-text" id="seconds">0</p>
-					<span>SECONDS</span>
+		<h1 class="title">IT'S <span>ALMOST</span> TIME FOR</h1>
+		<div class="input-div">
+			<label>Set a Date</label><br />
+			<input
+				id="date-id"
+				type="date"
+				class="date-input"
+				value="2023-08-11"
+			/><br />
+			<button id="btn" type="submit" class="submit-button btn-2">Submit</button>
+		</div>
+		<div class="body_flex">
+			<div class="title_text">
+				<div class="countdown-container">
+					<div class="countdown-el days-c">
+						<p class="big-text" id="days">0</p>
+						<span>DAYS</span>
+					</div>
+					<div class="countdown-el hours-c">
+						<p class="big-text" id="hours">0</p>
+						<span>HOURS</span>
+					</div>
+					<div class="countdown-el mins-c">
+						<p class="big-text" id="mins">0</p>
+						<span>MINUTES</span>
+					</div>
+					<div class="countdown-el seconds-c">
+						<p class="big-text" id="seconds">0</p>
+						<span>SECONDS</span>
+					</div>
 				</div>
 			</div>
-		</div>	
-	</div>
-</div>
-		
-		
-	
+		</div>
 	</body>
 </html>

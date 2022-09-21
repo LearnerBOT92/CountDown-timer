@@ -1,6 +1,6 @@
 /* Body */
 body {
-	background-color: black;
+	background-color: rgb(223, 178, 119);
 	background-blend-mode: multiply, multiply;
 	background-blend-mode: multiply;
 	background-size: cover;
@@ -21,9 +21,10 @@ h1 {
 	font-weight: normal;
 	color: #483018;
 	font-size: 4rem;
-  text-align: center;
+	text-align: center;
 	margin-top: 7rem;
 	margin-bottom: 0rem;
+	height: auto;
 }
 
 span {
@@ -40,11 +41,12 @@ span {
 	margin-bottom: 1rem;
 	margin-left: 0rem;
 	min-width: 100%;
+	/* background-color: aqua; */
 }
 
 .big-text {
 	font-weight: bold;
-	font-size: 2rem;
+	font-size: 3rem;
 	line-height: 1;
 	margin: 0 2rem;
 	color: #d84800;
@@ -63,4 +65,53 @@ span {
 
 p {
 	color: #d84800;
+}
+
+/* Input box */
+
+.input-div {
+	text-align: center;
+}
+
+button {
+	margin: 20px;
+	outline: none;
+}
+
+.submit-button {
+	width: 130px;
+	height: 40px;
+	padding: 10px 25px;
+	border: 2px solid #d84800;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+.btn-2:after {
+	position: absolute;
+	content: '';
+	top: 5px;
+	left: 6px;
+	width: 90%;
+	height: 70%;
+	border: 1px solid #000;
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+.btn-2:hover:after {
+	opacity: 1;
+}
+
+.date-input {
+	width: 160px;
+	height: 40px;
+	font-size: 18px;
+}
+
+.date-id {
 }
