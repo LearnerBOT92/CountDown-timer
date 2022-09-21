@@ -64,10 +64,10 @@ function countdown() {
 	const seconds = Math.floor(totalSeconds) % 60;
 
 	if (setDate == '') {
-		daysEl.innerHTML = 0;
-		hoursEl.innerHTML = 0;
-		minsEl.innerHTML = 0;
-		secondsEl.innerHTML = 0;
+		daysEl.innerHTML = '00';
+		hoursEl.innerHTML = '00';
+		minsEl.innerHTML = '00';
+		secondsEl.innerHTML = '00';
 	} else {
 		daysEl.innerHTML = days;
 		hoursEl.innerHTML = formatTime(hours);
