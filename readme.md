@@ -1,5 +1,5 @@
 Hello!!
 
-This is my first project while im doing my JavaScript course and personal research.
+This is my first project while I'm doing my JavaScript course and personal research.
 
 Thank you.
