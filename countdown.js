@@ -4,9 +4,8 @@ const minsEl = document.getElementById('mins');
 const secondsEl = document.getElementById('seconds');
 
 // Count-down timer
-
-let currentDate = '';
 let setDate = '';
+let currentDate = '';
 
 function countdown() {
 	const eventDateDay = new Date(setDate);
@@ -41,6 +40,7 @@ let dateInput = document.querySelector('input[type="date"]');
 // ---------------------------------------------------
 
 document.getElementById('btn').onclick = function click() {
+	let newDate = '';
 	currentDate = dateInput.value;
 	console.log(currentDate); // return a string value YYY-MM-DD
 
@@ -66,42 +66,43 @@ document.getElementById('btn').onclick = function click() {
 
 	for (let i = 0; i < dateArray.length; i++) {
 		if (i == 0) {
-			setDate += ` ${dateArray[i]}`;
+			newDate += ` ${dateArray[i]}`;
 		} else if (i == 1) {
 			if (dateArray[1] === '01') {
-				setDate += ` January`;
+				newDate += ` January`;
 			} else if (dateArray[1] === '02') {
-				setDate += ` February`;
+				newDate += ` February`;
 			} else if (dateArray[1] === '03') {
-				setDate += ` March`;
+				newDate += ` March`;
 			} else if (dateArray[1] === '04') {
-				setDate += ` April`;
+				newDate += ` April`;
 			} else if (dateArray[1] === '05') {
-				setDate += ` May`;
+				newDate += ` May`;
 			} else if (dateArray[1] === '06') {
-				setDate += ` June`;
+				newDate += ` June`;
 			} else if (dateArray[1] === '07') {
-				setDate += ` July`;
+				newDate += ` July`;
 			} else if (dateArray[1] === '08') {
-				setDate += ` August`;
+				newDate += ` August`;
 			} else if (dateArray[1] === '09') {
-				setDate += ` September`;
+				newDate += ` September`;
 			} else if (dateArray[1] === '10') {
-				setDate += ` October`;
+				newDate += ` October`;
 			} else if (dateArray[1] === '11') {
-				setDate += ` November`;
+				newDate += ` November`;
 			} else if (dateArray[1] === '12') {
-				setDate += ` December`;
+				newDate += ` December`;
 			}
 		} else if (i == 2) {
-			setDate += ` ${dateArray[i]}`;
+			newDate += ` ${dateArray[i]}`;
 		} else {
 			break;
 		}
 	}
-	// console.log(dateArray);
-	// console.log(setDate);
-	countdown(setDate);
+	setDate = newDate;
+	console.log(dateArray);
+	console.log(newDate);
+	countdown(newDate);
 
 	setInterval(countdown, 1000);
 };
