@@ -1,6 +1,6 @@
 /* Body */
 body {
-	background-color: rgb(223, 178, 119);
+	background-color: rgb(15, 14, 14);
 	background-blend-mode: multiply, multiply;
 	background-blend-mode: multiply;
 	background-size: cover;
@@ -67,6 +67,11 @@ p {
 	color: #d84800;
 }
 
+label {
+	color: #f0a848;
+	font-size: 25px;
+}
+
 /* Input box */
 
 .input-div {
@@ -76,6 +81,7 @@ p {
 button {
 	margin: 20px;
 	outline: none;
+	color: #f0a848;
 }
 
 .submit-button {
@@ -99,7 +105,7 @@ button {
 	left: 6px;
 	width: 90%;
 	height: 70%;
-	border: 1px solid #000;
+	border: 1px solid #d84800;
 	opacity: 0;
 	transition: all 0.3s ease;
 }
@@ -108,7 +114,15 @@ button {
 }
 
 .date-input {
-	width: 160px;
-	height: 40px;
-	font-size: 18px;
+	width: 180px;
+	height: 60px;
+	font-size: 20px;
+	background-color: rgb(15, 14, 14);
+	color: #483018;
+	border: 1px solid #d84800;
+	font-family: 'Poppins', sans-serif;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+	opacity: 0;
 }

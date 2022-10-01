@@ -35,34 +35,17 @@ function formatTime(time) {
 	return time < 10 ? `0${time}` : time;
 }
 
-// ---------------------------------------------------
+// -------------------------------------------Date input
 let dateInput = document.querySelector('input[type="date"]');
-// ---------------------------------------------------
+
+// --------------------------------------------Button
 
 document.getElementById('btn').onclick = function click() {
 	let newDate = '';
 	currentDate = dateInput.value;
-	console.log(currentDate); // return a string value YYY-MM-DD
+	console.log(currentDate);
 
-	// We need a function to take the set date and return the string in the set format String(Number(DAY) String(MONTH) Number(Year))
-	let dateArray = currentDate.replace(/-/g, ' ').split(' '); // return array of the date [YY, MM, DD]
-
-	// setDate += ` ${dateArray[0]} ${dateArray[1]} ${dateArray[2]} `;
-
-	// const months = {
-	// 	1: ` January`,
-	// 	2: ` February`,
-	// 	3: ` March`,
-	// 	4: ` April`,
-	// 	5: ` May`,
-	// 	6: ` June`,
-	// 	7: ` July`,
-	// 	8: ` August`,
-	// 	9: ` September`,
-	// 	10: ` October`,
-	// 	11: ` November`,
-	// 	12: ` December`,
-	// };
+	let dateArray = currentDate.replace(/-/g, ' ').split(' ');
 
 	for (let i = 0; i < dateArray.length; i++) {
 		if (i == 0) {
