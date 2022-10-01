@@ -37,6 +37,7 @@ span {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: center;
 	margin-top: 7rem;
 	margin-bottom: 1rem;
 	margin-left: 0rem;
