@@ -43,7 +43,6 @@ let dateInput = document.querySelector('input[type="date"]');
 document.getElementById('btn').onclick = function click() {
 	let newDate = '';
 	currentDate = dateInput.value;
-	console.log(currentDate);
 
 	let dateArray = currentDate.replace(/-/g, ' ').split(' ');
 
@@ -75,6 +74,8 @@ document.getElementById('btn').onclick = function click() {
 				newDate += ` November`;
 			} else if (dateArray[1] === '12') {
 				newDate += ` December`;
+			} else {
+				newDate += ` ${dateArray[1]}`;
 			}
 		} else if (i == 2) {
 			newDate += ` ${dateArray[i]}`;
@@ -83,8 +84,6 @@ document.getElementById('btn').onclick = function click() {
 		}
 	}
 	setDate = newDate;
-	console.log(dateArray);
-	console.log(newDate);
 	countdown(newDate);
 
 	setInterval(countdown, 1000);
