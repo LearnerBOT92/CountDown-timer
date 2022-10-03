@@ -90,7 +90,7 @@ document.getElementById('btn').onclick = function click() {
 	}
 	alert(newDate);
 	setDate = newDate;
-	countdown(newDate);
+	countdown(setDate);
 
 	setInterval(countdown, 1000);
 };
