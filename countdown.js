@@ -43,9 +43,10 @@ let dateInput = document.querySelector('input[type="date"]');
 document.getElementById('btn').onclick = function click() {
 	let newDate = '';
 	currentDate = dateInput.value;
-	console.log(typeof currentDate[0]);
 
 	let dateArray = currentDate.replace(/-/g, ' ').split(' ');
+
+	console.log(typeof dateArray[0]);
 
 	alert(dateArray);
 
