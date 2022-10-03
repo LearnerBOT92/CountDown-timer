@@ -8,11 +8,12 @@ let setDate = '';
 let currentDate = '';
 
 function countdown() {
+	let eventDateDay = new Date();
 	if (/webOS|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
 		let arrayTest = setDate.split(' ');
-		let eventDateDay = new Date(arrayTest[0], arrayTest[1], arrayTest[2]);
+		eventDateDay = new Date(arrayTest[0], arrayTest[1], arrayTest[2]);
 	} else {
-		const eventDateDay = new Date(setDate);
+		eventDateDay = new Date(setDate);
 	}
 
 	const currntDate = new Date();
