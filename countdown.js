@@ -46,6 +46,8 @@ document.getElementById('btn').onclick = function click() {
 
 	let dateArray = currentDate.replace(/-/g, ' ').split(' ');
 
+	alert(dateArray);
+
 	for (let i = 0; i < dateArray.length; i++) {
 		if (i == 0) {
 			newDate += ` ${dateArray[i]}`;
@@ -79,7 +81,6 @@ document.getElementById('btn').onclick = function click() {
 			}
 		} else if (i == 2) {
 			newDate += ` ${Number(dateArray[i])}`;
-			alert(dateArray[i]);
 		} else {
 			break;
 		}
