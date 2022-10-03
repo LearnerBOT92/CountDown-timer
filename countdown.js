@@ -80,7 +80,7 @@ document.getElementById('btn').onclick = function click() {
 				newDate += ` ${dateArray[1]}`;
 			}
 		} else if (i == 2) {
-			newDate += ` ${Number(dateArray[i])}`;
+			newDate += ` ${String(dateArray[i])}`;
 		} else {
 			break;
 		}
