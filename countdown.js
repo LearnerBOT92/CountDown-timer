@@ -53,7 +53,7 @@ document.getElementById('btn').onclick = function click() {
 
 	for (let i = 0; i < dateArray.length; i++) {
 		if (i == 0) {
-			newDate += ` ${dateArray[i]}`;
+			newDate += `${dateArray[i]}`;
 		} else if (i == 1) {
 			if (dateArray[1] === '01' || dateArray[1] === 1) {
 				newDate += ` January`;
@@ -88,6 +88,7 @@ document.getElementById('btn').onclick = function click() {
 			break;
 		}
 	}
+	alert(newDate);
 	setDate = newDate;
 	countdown(newDate);
 
