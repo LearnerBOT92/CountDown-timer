@@ -43,6 +43,7 @@ let dateInput = document.querySelector('input[type="date"]');
 document.getElementById('btn').onclick = function click() {
 	let newDate = '';
 	currentDate = dateInput.value;
+	console.log(typeof currentDate[0]);
 
 	let dateArray = currentDate.replace(/-/g, ' ').split(' ');
 
@@ -52,35 +53,35 @@ document.getElementById('btn').onclick = function click() {
 		if (i == 0) {
 			newDate += ` ${dateArray[i]}`;
 		} else if (i == 1) {
-			if (dateArray[1] === '01') {
+			if (dateArray[1] === '01' || dateArray[1] === 1) {
 				newDate += ` January`;
-			} else if (dateArray[1] === '02') {
+			} else if (dateArray[1] === '02' || dateArray[1] === 2) {
 				newDate += ` February`;
-			} else if (dateArray[1] === '03') {
+			} else if (dateArray[1] === '03' || dateArray[1] === 3) {
 				newDate += ` March`;
-			} else if (dateArray[1] === '04') {
+			} else if (dateArray[1] === '04' || dateArray[1] === 4) {
 				newDate += ` April`;
-			} else if (dateArray[1] === '05') {
+			} else if (dateArray[1] === '05' || dateArray[1] === 5) {
 				newDate += ` May`;
-			} else if (dateArray[1] === '06') {
+			} else if (dateArray[1] === '06' || dateArray[1] === 6) {
 				newDate += ` June`;
-			} else if (dateArray[1] === '07') {
+			} else if (dateArray[1] === '07' || dateArray[1] === 7) {
 				newDate += ` July`;
-			} else if (dateArray[1] === '08') {
+			} else if (dateArray[1] === '08' || dateArray[1] === 8) {
 				newDate += ` August`;
-			} else if (dateArray[1] === '09') {
+			} else if (dateArray[1] === '09' || dateArray[1] === 9) {
 				newDate += ` September`;
-			} else if (dateArray[1] === '10') {
+			} else if (dateArray[1] === '10' || dateArray[1] === 10) {
 				newDate += ` October`;
-			} else if (dateArray[1] === '11') {
+			} else if (dateArray[1] === '11' || dateArray[1] === 11) {
 				newDate += ` November`;
-			} else if (dateArray[1] === '12') {
+			} else if (dateArray[1] === '12' || dateArray[1] === 12) {
 				newDate += ` December`;
 			} else {
 				newDate += ` ${dateArray[1]}`;
 			}
 		} else if (i == 2) {
-			newDate += ` ${String(dateArray[i])}`;
+			newDate += ` ${dateArray[i]}`;
 		} else {
 			break;
 		}
