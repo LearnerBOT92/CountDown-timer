@@ -79,6 +79,7 @@ document.getElementById('btn').onclick = function click() {
 			}
 		} else if (i == 2) {
 			newDate += ` ${Number(dateArray[i])}`;
+			alert(dateArray[i]);
 		} else {
 			break;
 		}
