@@ -8,7 +8,13 @@ let setDate = '';
 let currentDate = '';
 
 function countdown() {
-	const eventDateDay = new Date(setDate);
+	if (/webOS|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+		let arrayTest = setDate.split(' ');
+		let eventDateDay = new Date(arrayTest[0], arrayTest[1], arrayTest[2]);
+	} else {
+		const eventDateDay = new Date(setDate);
+	}
+
 	const currntDate = new Date();
 
 	const totalSeconds = (eventDateDay - currntDate) / 1000;
