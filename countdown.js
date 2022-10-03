@@ -78,7 +78,7 @@ document.getElementById('btn').onclick = function click() {
 				newDate += ` ${dateArray[1]}`;
 			}
 		} else if (i == 2) {
-			newDate += ` ${dateArray[i]}`;
+			newDate += ` ${Number(dateArray[i])}`;
 		} else {
 			break;
 		}
