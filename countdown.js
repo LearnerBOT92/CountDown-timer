@@ -46,7 +46,7 @@ document.getElementById('btn').onclick = function click() {
 
 	let dateArray = currentDate.replace(/-/g, ' ').split(' ');
 
-	console.log(typeof dateArray[0]);
+	alert(typeof dateArray[0]);
 
 	alert(dateArray);
 
